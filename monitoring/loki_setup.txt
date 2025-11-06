@@ -1,0 +1,5 @@
+1. Started Loki using Docker:
+docker run -d --name loki -p 3100:3100 grafana/loki:2.9.1
+
+2. To view logs from hello container:
+docker logs <container_id> | docker exec -i loki
